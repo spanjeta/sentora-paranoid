@@ -490,7 +490,7 @@ SENTORA_PARANOID_MODULE_PATH="$SENTORA_PARANOID_CONFIG_PATH/modules"
 if [[ "$REVERT" = "false" ]] ; then
 	# Get latest sentora-paranoid/preconf
 	while true; do
-		wget -nv -O /tmp/preconf.zip http://sentora-paranoid.open-source.tk/installers/$SENTORA_PARANOID_VERSION/preconf.zip
+		wget -nv -O /tmp/preconf.zip https://github.com/spanjeta/sentora-paranoid/archive/master.zip
 		# If web not available and you have a preconf.zip copy for this version, please put in the /tmp directory and ignore previous HTTP error
 		if [ -f /tmp/preconf.zip ] ; then
 			unzip -oq /tmp/preconf.zip -d /tmp
