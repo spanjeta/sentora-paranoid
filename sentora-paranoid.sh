@@ -811,6 +811,12 @@ echo -e "\n-- Openssl certificates"
 if [[ "$REVERT" = "false" ]] ; then
 	if [[ "$OS" = "Ubuntu" ]]; then
 		SSL_PASS=$(passwordgen);
+
+			mkdir -vp $SENTORA_PARANOID_CONFIG_PATH/openssl/keys
+			mkdir -vp $SENTORA_PARANOID_CONFIG_PATH/openssl/requests
+      mkdir -vp $SENTORA_PARANOID_CONFIG_PATH/openssl/certs
+
+   
 		echo "Creating new CA please enter a new rootCA password and requested data"
 		openssl genrsa -des3 -passout pass:$SSL_PASS -out $SENTORA_PARANOID_CONFIG_PATH/openssl/keys/root-ca.key 2048 -config $SENTORA_PARANOID_CONFIG_PATH/openssl/openssl.cnf
 		echo "Generating root-ca certificate please provide previously rootCA password"
