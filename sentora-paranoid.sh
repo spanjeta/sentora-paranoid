@@ -494,8 +494,8 @@ if [[ "$REVERT" = "false" ]] ; then
 		# If web not available and you have a preconf.zip copy for this version, please put in the /tmp directory and ignore previous HTTP error
 		if [ -f /tmp/preconf.zip ] ; then
 			unzip -oq /tmp/preconf.zip -d /tmp
-			if [ -d /tmp/preconf/preconf ] ; then
-				PRECONF_TEMP=/tmp/preconf/preconf
+			if [ -d /tmp/sentora-paranoid-master/preconf ] ; then
+				PRECONF_TEMP=/tmp/sentora-paranoid-master/preconf
 			else
 				PRECONF_TEMP=/tmp/preconf
 			fi
