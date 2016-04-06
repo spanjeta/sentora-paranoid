@@ -1,26 +1,13 @@
 #!/usr/bin/env bash
 
-# Unofficial Sentora Automated Security Script
-# =============================================
-#
-#  This program is free software: you can redistribute it and/or modify
-#  it under the terms of the GNU General Public License as published by
-#  the Free Software Foundation, either version 3 of the License, or
-#  (at your option) any later version.
-#
-#  This program is distributed in the hope that it will be useful,
-#  but WITHOUT ANY WARRANTY; without even the implied warranty of
-#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#  GNU General Public License for more details.
-#
+#  Unofficial Sentora Automated Security Script
 #  You should have received a copy of the GNU General Public License
 #  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 #  OS VERSION supported: Ubuntu 14.04 32bit and 64bit
+
 #
-#  Official website: http://sentora-paranoid.open-source.tk
-#
-#  Author Mario Rodriguez Somohano, sentora-paranoid (at) open-source.tk
+#  Orignal Author Mario Rodriguez Somohano, sentora-paranoid (at) open-source.tk
 #  based on the original sentora installer script developed by 
 #  Pascal Peyremorte and others.
 #
