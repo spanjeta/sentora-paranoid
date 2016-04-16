@@ -1550,17 +1550,17 @@ fi
 
 #====================================================================================
 #--- cron/atd
-echo -e "\n-- Cron / atd security"
-if [[ "$REVERT" = "false" ]] ; then
-	if [[ "$OS" = "Ubuntu" ]]; then
-		change "" "1730" root crontab /var/spool/cron/crontabs
-		change "" "600" $HTTP_USER crontab /var/spool/cron/crontabs/$HTTP_USER
-	fi
-else
-	if [[ "$OS" = "Ubuntu" ]]; then
-		true
-	fi
-fi
+#echo -e "\n-- Cron / atd security"
+#if [[ "$REVERT" = "false" ]] ; then
+#	if [[ "$OS" = "Ubuntu" ]]; then
+#		change "" "1730" root crontab /var/spool/cron/crontabs
+#		change "" "600" $HTTP_USER crontab /var/spool/cron/crontabs/$HTTP_USER
+#	fi
+#else
+#	if [[ "$OS" = "Ubuntu" ]]; then
+#		true
+#	fi
+#fi
 
 #====================================================================================
 #--- sentora-paranoid security modules
