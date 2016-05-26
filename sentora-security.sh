@@ -1211,7 +1211,7 @@ if [[ "$REVERT" = "false" ]] ; then
 		sed -i "s@track_errors = On@track_errors = Off@" /etc/php5/cli/php.ini
 		sed -i "s@html_errors = On@html_errors = Off@" /etc/php5/cli/php.ini
 		# Prevent code injection (web only)
-		sed -i "s@allow_url_fopen = On@allow_url_fopen = Off@" /etc/php5/apache2/php.ini
+		#sed -i "s@allow_url_fopen = On@allow_url_fopen = Off@" /etc/php5/apache2/php.ini
 		sed -i "s@allow_url_include = On@allow_url_include = Off@" /etc/php5/apache2/php.ini
 		echo "NOTICE: Remote url fopen/include are disabled, this may cause conflicts whit some php scripts"
 		# File permissions
